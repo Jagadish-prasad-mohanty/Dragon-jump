@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    
+</head>
+<body>
+    <audio id="myGameAudio">
+        <source src="./game_tune/music.mp3" type="audio/mpeg">
+        
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="myGameOverAudio">
+        <source src="./game_tune/gameover.mp3" type="audio/mpeg">
+        
+        Your browser does not support the audio element.
+    </audio>
+      
+      
+      
+      
+    <div class="gameContainer">
+        <div class="gameOver">
+            <p>Click START to play </p>
+            <button onclick="func()" class="start" type="button">START</button> 
+        </div>
+        <div class="dino"></div>
+        <div id="scoreCount">
+            <strong>Your Score:</strong><span class="scorec">0</span> 
+        </div>
+        <div id="obstacle1" ></div>
+    </div>
+    
+</body>
+    <script src="./index.js"></script>
+</html>
